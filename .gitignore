@@ -1,0 +1,30 @@
+# Ignore .env file
+.env
+
+# Ignore prompts.py
+prompts.py
+
+# Ignore pycache
+__pycache__/
+*.pyc
+
+# Ignore virtual environments
+translate_video_env/
+translate_video_env_py311/
+
+# Ignore uploads folder
+uploads/
+
+# Ignore generated SRT files
+output.srt
+learning_content.srt
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# Ignore log files
+*.log
