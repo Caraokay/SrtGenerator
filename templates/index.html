@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语学习视频处理</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>英语学习视频上传</h1>
+    <form id="upload-form">
+        <input type="file" id="video-file" accept="video/*" required>
+        <button type="submit">上传并处理</button>
+    </form>
+    <div id="result" style="display: none;">
+        <h2>处理结果</h2>
+        <p>双语字幕: <a id="srt-link" href="#" download>下载SRT文件</a></p>
+        <p>学习内容: <a id="learning-srt-link" href="#" download>下载学习SRT文件</a></p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
